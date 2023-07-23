@@ -22,7 +22,7 @@ jobs:
       id: build
       with:
         arch: arm64
-        compiler: aosp-clang/master/clang-r383902b
+        compiler: clang/14/binutils
         defconfig: kebab-halium_defconfig
         image: Image
 
