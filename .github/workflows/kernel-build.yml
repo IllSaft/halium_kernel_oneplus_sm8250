@@ -24,7 +24,7 @@ jobs:
       with:
         arch: arm64
         compiler: clang/14/binutils
-        defconfig: kebab-halium_defconfig
+        defconfig: vendor/kebab-halium_defconfig
         image: Image
 
     - name: Release build
