@@ -23,7 +23,7 @@ jobs:
       id: build
       with:
         arch: arm64
-        compiler: proton-clang/20200321
+        compiler: proton-clang/20200502
         defconfig: vendor/kebab-halium_defconfig
         image: Image
 
