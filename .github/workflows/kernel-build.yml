@@ -7,10 +7,17 @@ on:
 
 jobs:
   build:
+    env:
+      DTC_EXT: /tmp/dtc_ext
     runs-on: ubuntu-latest
     steps:
     - name: Checkout kernel source
       uses: actions/checkout@v3
+    - name: DTC_EXT
+      run: |
+          curl --location https://android.googlesource.com/platform/prebuilts/misc/+/refs/heads/android10-gsi/linux-x86/dtc/dtc?format=TEXT | base64 --decode > /tmp/dtc_ext
+          chmod +x /tmp/dtc_ext
+          export DTC_EXT=/tmp/dtc_ext
 
     # - name: Checkout zipper
     #   uses: actions/checkout@v2
