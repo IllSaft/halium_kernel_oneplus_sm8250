@@ -31,7 +31,7 @@ jobs:
       with:
         arch: arm64
         compiler: proton-clang/20200502
-        defconfig: vendor/kebab-halium_defconfig
+        defconfig: vendor/kona-perf_defconfig
         image: Image
 
     - name: Release build
