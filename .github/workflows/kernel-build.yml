@@ -10,6 +10,8 @@ jobs:
     env:
       DTC_EXT: /tmp/dtc_ext
       OEM_TARGET_PRODUCT: kebab
+      OEM_PRODUCT_DEVICE: kebab
+      PRODUCT_DEVICE: kebab
     runs-on: ubuntu-latest
     steps:
     - name: Checkout kernel source
