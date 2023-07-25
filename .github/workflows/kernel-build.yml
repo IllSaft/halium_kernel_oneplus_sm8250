@@ -9,6 +9,7 @@ jobs:
   build:
     env:
       DTC_EXT: /tmp/dtc_ext
+      OEM_TARGET_PRODUCT: kebab
     runs-on: ubuntu-latest
     steps:
     - name: Checkout kernel source
@@ -31,7 +32,7 @@ jobs:
       with:
         arch: arm64
         compiler: proton-clang/20200502
-        defconfig: vendor/kona-perf_defconfig
+        defconfig: vendor/kebab-halium_defconfig
         image: Image
 
     - name: Release build
